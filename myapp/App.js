@@ -1,3 +1,4 @@
+import { error, log } from "node:console";
 const express = require("express");
 const app = express();
 
@@ -40,3 +41,5 @@ const integerArgs = (fn) => {
 const wrappedAdd = integerArgs(add);
 const result = wrappedAdd("2", 3);
 console.log(result);
+
+setTimeout(() => console.log(result));

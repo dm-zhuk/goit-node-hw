@@ -2,9 +2,11 @@
   "name": "myapp",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start",
+    "start": "node index",
+    "dev": "nodemon index",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.{js,jsx}"
@@ -14,6 +16,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "nanoid": "^5.0.7",
+    "npm": "^10.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }

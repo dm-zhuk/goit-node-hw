@@ -18,3 +18,23 @@ router.post("/login", (req, res, next) => {
 });
 
 module.exports = router;
+
+console.log("Welcome to Node.js");
+
+// terminal: npm init -y Makes package.json
+
+// terminal: npm i jest --save-dev It's when package needed for development only!
+
+// import fs from "node:fs";
+import fs from "node:fs/promises";
+
+fs.readFile("../index.js"),
+  (error, data) => {
+    console.log(error);
+    console.log(data);
+  };
+
+const func = async () => {
+  const filePath = "../index.js";
+};
+await fs.appendFile("./node.txt");
