@@ -17,3 +17,9 @@ async function removeContact(contactId) {
 async function addContact(name, email, phone) {
   // ...твій код. Повертає об'єкт доданого контакту (з id).
 }
+
+module.exports = {
+  getContactById,
+  removeContact,
+  addContact,
+};
