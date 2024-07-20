@@ -1,8 +1,10 @@
-// const topicTwo = require("./topicTwo.cjs");
-const readline = require("readline");
-const fs = require("fs").promises;
-const { program } = require("commander");
-require("colors");
+import readline from "readline";
+import fs from "node:fs/promises";
+import { program } from "commander";
+
+import pkg from "colors";
+const { colors } = pkg;
+
 program.option(
   "-f, --file [type]",
   "file for saving game results",
